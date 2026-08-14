@@ -1,8 +1,10 @@
 # AI & Data Science Job Salaries 2026
 
-Dashboard interativa desenvolvida para análise de salários e características profissionais do mercado de Inteligência Artificial e Ciência de Dados em 2026.
+Dashboard interativa desenvolvida para análise exploratória de salários e características profissionais do mercado de Inteligência Artificial e Ciência de Dados, com foco em Data Analytics, Business Intelligence e Data Visualization.
 
-O projeto utiliza uma base com **5.000 registros** e busca transformar dados sobre cargos, experiência, remuneração, trabalho remoto, adoção de ferramentas de IA e satisfação profissional em informações úteis para análise do mercado de trabalho.
+O projeto transforma uma base de dados sobre profissionais da área em uma interface analítica que permite explorar remuneração, experiência, modelo de trabalho, setor, localização, escolaridade e adoção de ferramentas de IA.
+
+Projeto de portfólio: desenvolvido com finalidade educacional e prática para aplicação de conceitos de análise de dados, definição de KPIs, visualização de dados e desenvolvimento de dashboards.
 
 ---
 
@@ -12,29 +14,11 @@ O projeto utiliza uma base com **5.000 registros** e busca transformar dados sob
 ---
 ## Sobre o projeto
 
-A base utilizada contém informações sobre profissionais de diferentes cargos relacionados a dados e Inteligência Artificial, incluindo:
+A proposta foi partir de uma base com dados profissionais e salariais e desenvolver uma dashboard capaz de responder perguntas relevantes sobre o mercado de trabalho em Inteligência Artificial e Ciência de Dados.
 
-- cargo;
-- nível de experiência;
-- tipo de contratação;
-- porte da empresa;
-- localização da empresa;
-- residência do profissional;
-- setor de atuação;
-- percentual de trabalho remoto;
-- anos de experiência;
-- escolaridade;
-- linguagem de programação principal;
-- uso diário de ferramentas de IA;
-- horas semanais utilizando ferramentas de IA;
-- salário anual em USD;
-- participação acionária oferecida;
-- percentual de bônus;
-- satisfação profissional;
-- horas mensais dedicadas ao desenvolvimento de novas habilidades;
-- percepção de medo em relação à automação por IA.
+Mais do que apresentar gráficos, o objetivo foi estruturar uma experiência de análise que permita comparar cargos, remuneração e níveis de experiência, além de explorar características como trabalho remoto, utilização de ferramentas de IA e satisfação profissional.
 
-A dashboard concentra a análise em **remuneração, experiência, trabalho remoto, adoção de IA, satisfação profissional e oportunidades por cargo**.
+A base utilizada possui 5.000 registros e 27 campos.
 
 ---
 
@@ -85,22 +69,21 @@ O Radar de Oportunidades combina informações de salário médio, uso diário d
 
 A dashboard apresenta seis indicadores principais:
 
-| KPI | Cálculo |
+| KPI | Objetivo |
 |---|---|
-| **Salário médio anual** | Média de `salary_usd` |
-| **Salário mensal médio** | Média de `salary_usd` ÷ 12 |
-| **100% remoto** | Percentual de registros com `remote_ratio = 100` |
-| **Usam IA diariamente** | Percentual de profissionais com `uses_ai_tools_daily = true` |
-| **Satisfação média** | Média de `job_satisfaction_score` |
-| **Medo de automação** | Média de `fears_ai_automation_score` |
+|Salário médio anual|Apresentar a remuneração anual média em USD no recorte selecionado
+|Salário mensal médio|Apresentar o equivalente mensal do salário médio anual, calculado pela divisão por 12
+|100% remoto|Mostrar a participação de registros classificados como totalmente remotos
+|Usam IA diariamente |Mostrar a participação de profissionais que utilizam ferramentas de IA diariamente
+|Satisfação média|Apresentar a média do indicador de satisfação profissional disponível na base
+|Medo de automação|Apresentar a média do indicador de receio em relação à automação por IA
 
-Sem filtros aplicados, a base apresenta salário médio anual de aproximadamente **US$ 98.605** e salário mensal médio equivalente a aproximadamente **US$ 8.217**.
-
-Os indicadores são recalculados automaticamente de acordo com os filtros selecionados.
+Todos os indicadores são atualizados dinamicamente conforme os filtros selecionados.
 
 ---
+## Recursos da dashboard
 
-## Filtros
+### Filtros
 
 A dashboard permite segmentar a análise pelos seguintes campos:
 
@@ -117,47 +100,33 @@ As opções dos filtros são apresentadas em ordem alfabética e os dados categ�
 
 ## Visualizações
 
-A dashboard reúne as seguintes análises:
+### Cargos mais valorizados
 
-### Ranking de salários por cargo
-
-Apresenta os **8 cargos com maior salário médio anual**, permitindo identificar rapidamente as funções mais valorizadas.
+Ranking dos 8 cargos com maior salário médio anual.
 
 ### Distribuição do trabalho remoto
 
-Mostra a composição dos registros entre:
-
-- presencial;
-- híbrido;
-- remoto.
+Composição entre trabalho presencial, híbrido e remoto.
 
 ### Salário por nível de experiência
 
-Compara o salário médio entre os diferentes níveis profissionais.
+Comparação do salário médio entre os diferentes níveis de experiência profissional.
 
 ### Experiência × salário
 
-Utiliza um gráfico de dispersão para analisar a relação entre anos de experiência e remuneração.
+Gráfico de dispersão relacionando anos de experiência e salário anual em USD.
 
 ### IA no trabalho
 
-Compara o salário médio entre profissionais que utilizam IA diariamente e aqueles que não utilizam, além de apresentar:
-
-- média de horas semanais utilizando ferramentas de IA;
-- média de horas mensais dedicadas ao desenvolvimento de novas habilidades.
+Comparação do salário médio entre profissionais que utilizam IA diariamente e aqueles que não utilizam diariamente. A análise também apresenta a média de horas semanais de uso de ferramentas de IA e a média de horas mensais dedicadas ao desenvolvimento de novas habilidades.
 
 ### Radar de Oportunidades
 
-Apresenta uma tabela dinâmica com os cargos de maior salário médio e as seguintes métricas:
+Tabela comparativa dos cargos com maior salário médio, apresentando salário médio, uso diário de IA, satisfação média e percentual de profissionais 100% remotos.
 
-- salário médio;
-- percentual de uso diário de IA;
-- satisfação média;
-- percentual de profissionais 100% remotos.
+### Leitura Executiva
 
-### Leitura executiva
-
-Gera um resumo dinâmico da seleção atual, destacando o cargo com maior salário médio, o nível de experiência mais remunerado, a adoção diária de IA e a participação do trabalho 100% remoto.
+Resumo dinâmico destacando cargo com maior salário médio, nível de experiência mais remunerado, adoção diária de IA e participação do trabalho 100% remoto.
 
 ---
 
@@ -182,7 +151,9 @@ Também está disponível a opção **Limpar filtros**, permitindo retornar rapi
 
 ## UX/UI
 
-A identidade visual foi inspirada em estética tecnológica utilizando:
+A identidade visual foi inspirada na estética tecnológica da imagem de referência utilizada durante o desenvolvimento do projeto.
+
+A interface utiliza:
 
 - fundo azul-marinho;
 - tons de azul, ciano e roxo;
