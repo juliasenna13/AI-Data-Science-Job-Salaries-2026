@@ -7,10 +7,8 @@ O projeto utiliza uma base com **5.000 registros** e busca transformar dados sob
 ---
 
 ## Dashboard
-
-A dashboard foi desenvolvida em HTML, CSS e JavaScript e permite explorar os dados por meio de filtros e visualizações interativas.
-
-Após a publicação no GitHub Pages, o link do projeto poderá ser adicionado nesta seção.
+laries
+[![Preview da Dashboard IA Data Salaries](dashboard.png)](https://juliasenna13.github.io/Netflix-Catalog-Analytics/)
 
 ---
 
@@ -250,7 +248,7 @@ AI-Data-Science-Job-Salaries-2026/
 
 ### GitHub Pages
 
-Após configurar o GitHub Pages no repositório, a dashboard poderá ser acessada diretamente pelo navegador.
+Pode ser acessada diretamente pelo navegador: https://juliasenna13.github.io/AI-Data-Science-Job-Salaries-2026/
 
 ### Localmente
 
