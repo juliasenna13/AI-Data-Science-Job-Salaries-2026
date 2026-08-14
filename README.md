@@ -7,11 +7,9 @@ O projeto utiliza uma base com **5.000 registros** e busca transformar dados sob
 ---
 
 ## Dashboard
-laries
-[![Preview da Dashboard IA Data Salaries](dashboard.png)](https://juliasenna13.github.io/Netflix-Catalog-Analytics/)
+[![Preview da Dashboard IA Data Salaries](dashboard.png)](https://juliasenna13.github.io/AI-Data-Science-Job-Salaries-2026/)
 
 ---
-
 ## Sobre o projeto
 
 A base utilizada contém informações sobre profissionais de diferentes cargos relacionados a dados e Inteligência Artificial, incluindo:
