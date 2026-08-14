@@ -1,10 +1,10 @@
 # AI & Data Science Job Salaries 2026
 
-Dashboard interativa desenvolvida para análise exploratória de salários e características profissionais do mercado de Inteligência Artificial e Ciência de Dados, com foco em Data Analytics, Business Intelligence e Data Visualization.
+Dashboard interativa desenvolvida para análise exploratória de salários e características profissionais do mercado de Inteligência Artificial e Ciência de Dados, com foco em **Data Analytics, Business Intelligence e Data Visualization**.
 
-O projeto transforma uma base de dados sobre profissionais da área em uma interface analítica que permite explorar remuneração, experiência, modelo de trabalho, setor, localização, escolaridade e adoção de ferramentas de IA.
+O projeto transforma uma base de dados sobre profissionais da área em uma interface analítica que permite explorar **remuneração, experiência, modelo de trabalho, setor, localização, escolaridade e adoção de ferramentas de IA**.
 
-Projeto de portfólio: desenvolvido com finalidade educacional e prática para aplicação de conceitos de análise de dados, definição de KPIs, visualização de dados e desenvolvimento de dashboards.
+> **Projeto de portfólio:** desenvolvido com finalidade educacional e prática para aplicação de conceitos de análise de dados, definição de KPIs, visualização de dados e desenvolvimento de dashboards.
 
 ---
 
@@ -130,25 +130,55 @@ Resumo dinâmico destacando cargo com maior salário médio, nível de experiên
 
 ---
 
-## Interatividade
+## Insights dinâmicos
 
-Todos os principais componentes respondem aos filtros aplicados.
+A dashboard destaca informações que se atualizam conforme os filtros selecionados, incluindo:
 
-Ao alterar uma seleção, são recalculados dinamicamente:
-
-- KPIs;
-- rankings;
-- distribuição do modelo de trabalho;
-- salário por experiência;
-- gráfico de dispersão;
-- comparação de uso de IA;
-- Radar de Oportunidades;
-- Leitura Executiva.
-
-Também está disponível a opção **Limpar filtros**, permitindo retornar rapidamente à visão geral da base.
+- cargo com maior salário médio;
+- nível de experiência com maior remuneração média;
+- participação do uso diário de ferramentas de IA;
+- participação do trabalho totalmente remoto;
+- comparação de oportunidades entre cargos.
 
 ---
 
+## Preparação e qualidade dos dados
+
+A estrutura do dataset foi verificada antes da definição das análises para garantir que os indicadores fossem compatíveis com os campos disponíveis.
+
+A base utilizada possui:
+
+- **5.000 registros**;
+- **27 campos**;
+- **12 cargos distintos**;
+- **5 níveis de experiência**;
+- **10 setores de atuação**;
+- **nenhum valor nulo identificado**;
+- **nenhuma linha totalmente duplicada identificada**.
+
+O modelo de trabalho é representado pelo campo `remote_ratio`, com valores correspondentes a **0%, 50% e 100% de trabalho remoto**.
+
+A remuneração utilizada nas análises é baseada no campo `salary_usd`, que representa o salário anual em dólares americanos.
+
+---
+## Uso de Inteligência Artificial no projeto
+
+O ChatGPT foi utilizado como ferramenta de apoio durante o desenvolvimento, principalmente para:
+
+- analisar a estrutura do dataset;
+- estruturar e revisar perguntas de negócio;
+- discutir KPIs compatíveis com os dados disponíveis;
+- apoiar a construção e evolução do código HTML, CSS e JavaScript;
+- implementar filtros e interatividade;
+- revisar decisões de UX/UI;
+- auxiliar na identificação de limitações analíticas da base;
+- traduzir os dados categóricos exibidos na interface;
+- iterar e aprimorar a dashboard;
+- apoiar a documentação do projeto.
+
+O uso de IA fez parte do processo como ferramenta de **assistência, experimentação e aprendizado**, e não como substituição da análise crítica dos dados.
+
+---
 ## UX/UI
 
 A identidade visual foi inspirada na estética tecnológica da imagem de referência utilizada durante o desenvolvimento do projeto.
@@ -165,6 +195,15 @@ A interface utiliza:
 
 A proposta visual busca combinar uma estética tecnológica com legibilidade e organização das informações.
 
+## Fonte de dados
+A base de dados utilizada neste projeto foi obtida no **Kaggle** e contém informações sobre filmes e séries disponíveis no catálogo da Netflix.
+
+**Dataset:** AI & Data Science Job Salaries 2026 
+**Fonte:** Kaggle  
+**Autor:** Udit Jain
+**Link:** [https://www.kaggle.com/datasets/uditjain13/ai-and-data-science-job-salaries-2026]
+
+Os dados foram utilizados para fins educacionais, prática de análise de dados e desenvolvimento de portfólio.
 ---
 
 ## Tecnologias e ferramentas
